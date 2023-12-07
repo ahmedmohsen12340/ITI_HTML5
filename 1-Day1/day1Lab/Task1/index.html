@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <video src="video/frozen.mp4" id="video" poster="image/frozen.jpg" width="700"
+            ontimeupdate="timepass()"></video>
+    </div>
+    <div>
+        <input value="0" id="currentTime" type="range" style="width: 650px;" oninput="changeCurrent()">
+        <span id="indicator">0:0/0:0</span>
+    </div>
+    <div>
+        <button onclick="play()">play</button>
+        <button onclick="stop()">stop</button>
+        <button onclick="spDown()">&lt;&lt;</button>
+        <button onclick="back()">&lt;</button>
+        <button onclick="forward()">&gt;</button>
+        <button onclick="spUp()">&gt;&gt;</button>
+        <input min="0" step="0.1" max="1" value="0.5" id="volume" type="range" oninput="changeVolume()">
+        <button id="mute" onclick="toggleMute()">mute</button>
+    </div>
+    <div>
+        <label for="speed">speed</label>
+        <input value="1" min="0.25" step="0.25" max="2.5" id="speed" type="range" oninput="changespeed()">
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
