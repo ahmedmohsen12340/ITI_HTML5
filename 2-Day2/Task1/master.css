@@ -1,0 +1,19 @@
+#user:invalid,
+#email:invalid{
+    outline: 2px solid red;
+}
+#user:valid,
+#email:valid{
+    outline: 2px solid blue;
+}
+#userValid,
+#emailValid{
+    display: none;
+}
+#user:invalid+#userValid,
+#email:invalid+#emailValid{
+    display: block;
+}
+.m-20px{
+    margin: 20px 0;
+}

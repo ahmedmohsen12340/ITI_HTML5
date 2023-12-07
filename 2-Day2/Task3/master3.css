@@ -1,0 +1,14 @@
+button{
+    background-color: lightblue;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 5px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+button:hover{
+    background-color: pink;
+    box-shadow: 0 0 20px blue;
+}
